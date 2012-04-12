@@ -115,6 +115,8 @@
 .btn-success:hover,
 .btn-info,
 .btn-info:hover,
+.btn-surprise,
+.btn-surprise:hover,
 .btn-inverse,
 .btn-inverse:hover {
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -126,6 +128,7 @@
 .btn-danger.active,
 .btn-success.active,
 .btn-info.active,
+.btn-surprise.active,
 .btn-inverse.active {
   color: rgba(255,255,255,.75);
 }
@@ -150,6 +153,10 @@
 // Info appears as a neutral blue
 .btn-info {
   .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
+}
+// Surprise appears as a violett
+.btn-surprise {
+  .buttonBackground(@btnSurpriseBackground, @btnSurpriseBackgroundHighlight);
 }
 // Inverse appears as dark gray
 .btn-inverse {
